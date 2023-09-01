@@ -1,0 +1,46 @@
+.footer {
+    background-color: #0F0817;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #00BFA5;
+    transition: opacity 0.3s;
+    font-size: 20px;
+}
+
+.icons a:hover {
+    opacity: 0.7;
+}
+
+.back-to-top > a {
+    color: #00BFA5;
+}
+
+button{
+    margin: 0;
+    padding: 10px 20px;
+    color: #00BFA5;
+    background: #0F0817;
+}
+
+button:hover {
+    color: #0F0817;
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

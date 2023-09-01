@@ -1,0 +1,419 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    padding-top: 132px;
+    position: relative;
+    max-width: 1532px;
+}
+
+.inter {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainImg {
+    width: 294px;
+    margin: 0 auto 30px;
+    animation: floatAnimation 6s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnima {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+}
+
+.figm, .rct, .elps1, .elps2, .tail {
+    position: absolute;
+}
+
+.figm {
+    width: 147px;
+    left: 210px;
+    margin-top: 114px;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+}
+
+.rct {
+    width: 90px;
+    right: 1180px;
+    margin-top: 630px;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+    animation-delay: -4s;
+}
+
+.elps1 {
+    left: 490px;
+    width: 24px;
+    margin-top: 420px;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+    animation-delay: -2s;
+}
+
+.elps2 {
+    width: 33px;
+    right: 340px; 
+    margin-top: 750px;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+    animation-delay: -9.48s;
+}
+
+.tail {
+    width: 121px;
+    left: 1110px;
+    margin-top: 300px;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+    animation-delay: -1.6s;
+}
+
+.middle{
+    text-align: center;
+}
+
+.middle > h2{
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.middle > h4 {
+    color: #00BFA5;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+@font-face {
+    font-family: Elina03-Bold;
+    src: url(./Eina03-Bold.ttf);
+}
+
+.middle > h1 {
+    width: 713px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Elina03-Bold';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 74.432px;
+}
+
+.middle > p{
+    color: #594A66;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 72px;
+    line-height: 18.608px;
+    width: 713px;
+    margin-bottom: 74px;
+}
+
+.middle > button {
+    width: 229px;
+    height: 70px;
+    border: none;
+    border-radius: 21px;
+    background: #00BFA5;
+    margin-bottom: 90px;
+}
+
+.middle > button > a {
+    text-decoration: none;
+    color: #0A040F;
+    text-align: center;
+    font-family: 'IBM Plex Mono';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        padding-top: 50px;
+    }
+
+    .mainImg {
+        width: 190px;
+    }
+
+    .figm {
+        width: 99px;
+        left: 110px;
+        margin-top: 70px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+    }
+
+    .rct {
+        width: 60px;
+        right: 730px;
+        margin-top: 400px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -4s;
+    }
+
+    .elps1 {
+        width: 19;
+        left: 230px;
+        margin-top: 290px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -2s;
+    }
+
+    .elps2 {
+        width: 16;
+        right: 170px;
+        margin-top: 650px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -9.48s;
+    }
+
+    .tail {
+        width: 90px;
+        left: 625px;
+        margin-top: 150px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -1.6s;
+    }
+
+    .middle > h2 {
+        font-size: 32px;
+    }
+
+    .middle > h4 {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .middle > h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .middle > p {
+        font-size: 14px;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    .middle > button {
+        width: 160px;
+        height: 50px;
+        margin-bottom: 60px;
+    }
+
+    .middle > button > a {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainImg {
+        width: 199px;
+    }
+
+    .figm {
+        width: 99px;
+        left: 110px;
+        margin-top: 70px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+    }
+
+    .rct {
+        width: 55px;
+        right: 620px;
+        margin-top: 405px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -4s;
+    }
+
+    .elps1 {
+        width: 19px;
+        left: 230px;
+        margin-top: 310px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -2s;
+    }
+
+    .elps2 {
+        width: 16px;
+        right: 170px;
+        margin-top: 600px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -9.48s;
+    }
+
+    .tail {
+        width: 90px;
+        left: 590px;
+        margin-top: 150px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -1.6s;
+    }
+
+    .middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle > h2 {
+        font-size: 32px;
+    }
+
+    .middle > h4 {
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .middle > h1 {
+        font-size: 32px;
+        line-height: 56px;
+        width: 355px;
+        font-weight: 400;
+        line-height: 116.3%;
+    }
+
+    .middle > p {
+        color: #594A66;
+        width: 621px;
+        font-family: 'IBM Plex Mono';
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 11.63px;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    .middle > button {
+        width: 160px;
+        height: 50px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .middle > button > a {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero {
+        padding-top: 20px;
+    }
+
+    .mainImg {
+        width: 150px;
+    }
+
+    .figm {
+        width: 55px;
+        left: 30px;
+        margin-top: 90px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+    }
+
+    .rct {
+        width: 35px;
+        right: 300px;
+        margin-top: 360px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -4s;
+    }
+
+    .elps1 {
+        width: 16px;
+        left: 80px;
+        margin-top: 240px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -2s;
+    }
+
+    .elps2 {
+        width: 19px;
+        right: 60px;
+        margin-top: 550px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -9.48s;
+    }
+
+    .tail {
+        width: 50px;
+        left: 300px;
+        margin-top: 220px;
+        animation: floatAnimation 3s infinite alternate ease-in-out;
+        animation-delay: -1.6s;
+    }
+
+    .middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle > h2 {
+        font-size: 22px;
+    }
+
+    .middle > h4 {
+        font-size: 9px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .middle > h1 {
+        font-size: 25px;
+        line-height: 56px;
+        width: 275px;
+        font-weight: 400;
+        line-height: 116.3%;
+    }
+
+    .middle > p {
+        color: #594A66;
+        width: 321px;
+        font-family: 'IBM Plex Mono';
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 15.63px;
+        margin-top: 36px;
+        margin-bottom: 25px;
+    }
+
+    .middle > button {
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .middle > button > a {
+        font-size: 10px;
+    }
+}

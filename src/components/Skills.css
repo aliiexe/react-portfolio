@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .overlay{
+    position: relative;
+    background: rgb(10,4,15);
+background: linear-gradient(90deg, rgba(10,4,15,1) 0%, rgba(38,24,53,1) 2%, rgba(10,4,15,0) 4%, rgba(15,4,4,0) 96%, rgba(38,24,53,1) 98%, rgba(10,4,15,1) 100%, rgba(10,4,15,0) 4100%);
+} */
+
+.skills {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 1532px;
+    /* box-shadow: inset 0px 0px 15px 15px #0A040F; */
+}
+
+.skills > h1 {
+    color: #00BFA5;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 40s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 100px;
+    margin: 40px 50px;
+}
+
+.skls{
+    margin: 0;
+    padding: 0;
+}
+
+.skls > p{
+    color: #fff;
+    font-family: IBM Plex Mono;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 50px 0 50px 40px;
+    line-height: 40px;
+    height: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .logos-slide img {
+        height: 70px;
+        margin: 20px 40px;
+    }
+
+    .skills > h1 {
+        color: #00BFA5;
+        font-family: 'IBM Plex Mono', monospace;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .skls > p{
+        color: #fff;
+        font-family: IBM Plex Mono;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 50px 0 50px 40px;
+        line-height: 20px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .skills > h1 {
+        color: #00BFA5;
+        font-family: 'IBM Plex Mono', monospace;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .logos-slide img {
+        height: 80px;
+        margin: 30px 30px;
+    }
+
+    .skls > p{
+        color: #fff;
+        font-family: IBM Plex Mono;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 100px 0 50px 40px;
+        line-height: 20px;
+        height: 40px;
+    }
+}

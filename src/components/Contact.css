@@ -1,0 +1,100 @@
+.contact{
+    min-height: 100vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono';
+    margin-top: 100px;
+}
+
+.contact > div {
+    background: #0F0817;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 2em rgba(0,0,0,0.3);
+}
+
+.contact > div > h1 {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.contact p  {
+    max-width: 400px;
+    line-height: 27px;
+    color: #fff;
+    margin: 1em 0 2em 0;
+}
+
+.contact form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea{
+    border: none;
+    padding: 0.8em;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0.5em 0 1em 0;
+    font-size: 1.1em;
+    background: #261835;
+    color: #00BFA5;
+}
+
+.contact label {
+    color: #00BFA5;
+}
+
+.contact textarea {
+    resize: none;
+    height: 8em;
+    font-family: 'IBM Plex Mono';
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    outline: none;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color: #00bfa67a;
+}
+
+.contact button {
+    background: #0F0817;
+    border: 2px solid #00BFA5;
+    border-radius: 21px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    color: #00BFA5;
+    width: 100%;
+}
+
+.contact button:hover, .contact button:focus {
+    box-shadow: inset 400px 0 0 0 #00BFA5;
+    transform: scaleX(10px);
+    color: #0F0817;
+}
+
+@media screen and (max-width: 500px) {
+    .contact{
+        font-size: 14px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact{
+        margin: 0;
+        padding: 0;
+    }
+}
